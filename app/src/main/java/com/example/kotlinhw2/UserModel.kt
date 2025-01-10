@@ -1,9 +1,12 @@
 package com.example.kotlinhw2
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 import java.io.Serializable
 
+@Parcelize
 data class UserModel(
-    private val name: String,
-    private val email: String,
-    private val password: String
-) : Serializable
+    val name: String,
+    val email: String,
+    val password: String
+) : Parcelable

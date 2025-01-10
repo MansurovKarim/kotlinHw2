@@ -16,7 +16,8 @@
         </action>
         <argument
             android:name="user"
-            app:argType="java.io.Serializable" />
+            app:argType="com.example.kotlinhw2.UserModel" />
+
     </fragment>
 
     <fragment
@@ -24,9 +25,10 @@
         android:name="com.example.kotlinhw2.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" >
+
         <argument
             android:name="user"
-            app:argType="java.io.Serializable" />
+            app:argType="com.example.kotlinhw2.UserModel" />
     </fragment>
 
 </navigation>
